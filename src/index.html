@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jose Gale Resume</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="title">
+            <h1>Jose David Gale Torre</h1>
+        </div>
+        <div class="menu">
+            <ul class="nav">
+                <li class="selected" id="menuInfo" onclick="ShowContent('info', 'menuInfo')">Info</li>
+                <li id="menuEducation" onclick="ShowContent('education', 'menuEducation')">Education</li>
+                <li id="menuSkills" onclick="ShowContent('skills', 'menuSkills')">Skills</li>
+                <li id="menuResume" onclick="ShowContent('resume', 'menuResume')">Resume</li>
+            </ul>
+        </div>
+
+        <div class="subcontent shown" id="info">
+            <div class="title">
+                <h1>Info</h1>
+            </div>
+            <div class="content">
+                <div class="photo">
+                    <img src="./img/user256X256.png" alt="Jose Gale Photo">
+                </div>
+                <div class="info">
+                    <div class="label">
+                        BirthDay
+                    </div>
+                    <div class="value">
+                        24 June 1989
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="label">
+                        Email
+                    </div>
+                    <div class="value">
+                        josedavidgale@gmail.com
+                    </div>
+                </div>
+
+                <div class="info">
+                    <div class="label">
+                        Live in
+                    </div>
+                    <div class="value">
+                        Honduras
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subcontent" id="education">
+            <div class="title">
+                <h1>Education</h1>
+            </div>
+        </div>
+        <div class="subcontent" id="skills">
+            <div class="title">
+                <h1>Skills</h1>
+            </div>
+        </div>
+        <div class="subcontent" id="resume">
+            <div class="title">
+                <h1>Resume</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyABiEOFso9QcKyp7G-5PkDqF_HsK-DKFqk",
+            authDomain: "resume-5d4ec.firebaseapp.com",
+            databaseURL: "https://resume-5d4ec.firebaseio.com",
+            projectId: "resume-5d4ec",
+            storageBucket: "",
+            messagingSenderId: "750262854326"
+        };
+        firebase.initializeApp(config);
+    </script>
+</body>
+
+</html>
