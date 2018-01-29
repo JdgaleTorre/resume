@@ -12,6 +12,10 @@ body {
     height: 100%;
 }
 
+img {
+    width: 100%;
+}
+
 .bkg-main-color {
     background-color: var(--main-color)!important;
 }
@@ -32,6 +36,18 @@ body {
     margin: auto auto;
     color: var(--third-color);
     height: 96%;
+}
+
+.contentPageNotFound {
+    margin: auto auto;
+    color: var(--third-color);
+    /* height: 96%; */
+}
+
+.contentPageNotFound h1,
+.contentPageNotFound h2,
+.contentPageNotFound h3 {
+    text-align: center;
 }
 
 .title {
@@ -191,4 +207,18 @@ strong {
 .progress-bar.pill,
 .progress-bar.pill .bar {
     border-radius: 10.5rem;
+}
+
+
+.image {
+    width: 100%;
+    margin: auto;
+}
+
+/* mediaQuery para pantallas mas grandes */
+@media (min-width: 700px) {
+    .image {
+        width: 700px;
+    }
+    
 }
