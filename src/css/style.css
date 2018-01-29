@@ -74,6 +74,7 @@ img {
     margin: 5px;
     width: 24%;
     text-align: center;
+    cursor: pointer;
 }
 
 .nav li.selected {
@@ -209,16 +210,39 @@ strong {
     border-radius: 10.5rem;
 }
 
-
 .image {
     width: 100%;
     margin: auto;
 }
 
+img.logo {
+    width: 35px;
+    display: inline-block;
+    right: 0px;
+    position: relative;
+}
+
+.title h1 {
+    display: inline-block;
+    width: 88%;
+}
+
 /* mediaQuery para pantallas mas grandes */
+
 @media (min-width: 700px) {
     .image {
         width: 700px;
     }
-    
+
+    .content .title,
+    .content .menu,
+    .content .subcontent {
+        width: 700px;
+        margin: auto;
+    }
+
+    .content .photo {
+        width: 570px;
+        margin: auto;
+    }
 }
